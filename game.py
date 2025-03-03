@@ -22,8 +22,6 @@ def snowman(snowman_word):
     """
     correct_letter_guess_statuses = build_letter_status_dict(snowman_word)
     wrong_guesses_list = []
-    print(correct_letter_guess_statuses)
-    print(wrong_guesses_list)
 
     while len(wrong_guesses_list) < SNOWMAN_MAX_WRONG_GUESSES:
         print_word_progress_string(snowman_word, correct_letter_guess_statuses)
